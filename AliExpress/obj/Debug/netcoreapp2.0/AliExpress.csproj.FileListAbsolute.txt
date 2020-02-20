@@ -1,0 +1,11 @@
+C:\Users\carlos.hoil\source\repos\AliExpress\AliExpress\bin\Debug\netcoreapp2.0\AliExpress.deps.json
+C:\Users\carlos.hoil\source\repos\AliExpress\AliExpress\bin\Debug\netcoreapp2.0\AliExpress.runtimeconfig.json
+C:\Users\carlos.hoil\source\repos\AliExpress\AliExpress\bin\Debug\netcoreapp2.0\AliExpress.runtimeconfig.dev.json
+C:\Users\carlos.hoil\source\repos\AliExpress\AliExpress\bin\Debug\netcoreapp2.0\AliExpress.dll
+C:\Users\carlos.hoil\source\repos\AliExpress\AliExpress\bin\Debug\netcoreapp2.0\AliExpress.pdb
+C:\Users\carlos.hoil\source\repos\AliExpress\AliExpress\obj\Debug\netcoreapp2.0\AliExpress.csprojResolveAssemblyReference.cache
+C:\Users\carlos.hoil\source\repos\AliExpress\AliExpress\obj\Debug\netcoreapp2.0\AliExpress.csproj.CoreCompileInputs.cache
+C:\Users\carlos.hoil\source\repos\AliExpress\AliExpress\obj\Debug\netcoreapp2.0\AliExpress.AssemblyInfoInputs.cache
+C:\Users\carlos.hoil\source\repos\AliExpress\AliExpress\obj\Debug\netcoreapp2.0\AliExpress.AssemblyInfo.cs
+C:\Users\carlos.hoil\source\repos\AliExpress\AliExpress\obj\Debug\netcoreapp2.0\AliExpress.dll
+C:\Users\carlos.hoil\source\repos\AliExpress\AliExpress\obj\Debug\netcoreapp2.0\AliExpress.pdb

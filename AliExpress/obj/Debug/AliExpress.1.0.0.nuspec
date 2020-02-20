@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>AliExpress</id>
+    <version>1.0.0</version>
+    <authors>AliExpress</authors>
+    <owners>AliExpress</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Package Description</description>
+    <dependencies>
+      <group targetFramework=".NETCoreApp2.0">
+        <dependency id="Microsoft.NETCore.App" version="2.0.0" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="C:\Users\carlos.hoil\source\repos\AliExpress\AliExpress\bin\Debug\netcoreapp2.0\AliExpress.runtimeconfig.json" target="lib\netcoreapp2.0\AliExpress.runtimeconfig.json" />
+    <file src="C:\Users\carlos.hoil\source\repos\AliExpress\AliExpress\bin\Debug\netcoreapp2.0\AliExpress.dll" target="lib\netcoreapp2.0\AliExpress.dll" />
+  </files>
+</package>
