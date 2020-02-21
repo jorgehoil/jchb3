@@ -10,15 +10,13 @@ namespace AliExpress
         public double calcularCostoEnvio(double dDistancia, double dMargenUtilidad)
         {
             double dCostoEnvio = (10 * dDistancia) * (1 + dMargenUtilidad);
-
             return dCostoEnvio;
-
         }
 
-        public DateTime calculaTiempoTraslado(double dDistancia)
+        public double calculaTiempoTraslado(double dDistancia)
         {
-            
-            
-        }      
+             double dTiempo = (600 / dDistancia);
+            return dTiempo;
+        }
     }
 }

@@ -8,15 +8,10 @@ namespace AliExpress
 
         static void Main(string[] args)
         {
-            IFactoryPaqueteria fabricaPaqueteria=null;
-            IFactoryTransporte fabricaTransporte=null;
-           
+            Procesar obj = new Procesar();
+            obj.procesar();
+            Console.ReadKey();
             
-
-            
-            
-                
-           
 
         }
     }

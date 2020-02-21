@@ -24,7 +24,8 @@ namespace AliExpress
             double dMargenUtilidad = iPaqueteria.obtenerMargenUtilidad();
             double dCostoEnvio = iTransporte.calcularCostoEnvio(pedido.dDistancia, dMargenUtilidad);
 
-            cCadenaFinal = string.Format("Tu paquete {} de"+ pedido.cOrigen+" y llegará a "+pedido.cDestino +" el {}"+"y tendrá un costo de"+dCostoEnvio);
+
+            cCadenaFinal = string.Format("Tu paquete de"+ pedido.cOrigen+" y llegará a "+pedido.cDestino +" el"+"y tendrá un costo de"+dCostoEnvio);
             return cCadenaFinal;
 
         }

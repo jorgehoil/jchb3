@@ -9,19 +9,14 @@ namespace AliExpress
     {
         public double calcularCostoEnvio(double dDistancia, double dMargenUtilidad)
         {
-            throw new NotImplementedException();
+            double dCostoEnvio = (1 * dDistancia) * (1 + dMargenUtilidad);
+            return dCostoEnvio;
         }
 
-        public string calcularFechaEntrega(double dTiempoTraslado)
+        public double calculaTiempoTraslado(double dDistancia)
         {
-            throw new NotImplementedException();
+            double dTiempo = (80 / dDistancia);
+            return dTiempo;
         }
-
-        public DateTime calculaTiempoTraslado(double dDistancia)
-        {
-            throw new NotImplementedException();
-        }
-
-       
     }
 }

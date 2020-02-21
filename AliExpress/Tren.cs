@@ -7,19 +7,16 @@ namespace AliExpress
 {
     class Tren : ITransporte
     {
-        double ITransporte.calcularCostoEnvio(double dDistancia, double dMargenUtilidad)
+        public double calcularCostoEnvio(double dDistancia, double dMargenUtilidad)
         {
-           
+            double dCostoEnvio = (5 * dDistancia) * (1 + dMargenUtilidad);
+            return dCostoEnvio;
         }
 
-        string ITransporte.calcularFechaEntrega(double dTiempoTraslado)
+        public double calculaTiempoTraslado(double dDistancia)
         {
-           
-        }
-
-        DateTime ITransporte.calculaTiempoTraslado(double dDistancia)
-        {
-            
+            double dTiempo = (46 / dDistancia);
+            return dTiempo;
         }
     }
 }

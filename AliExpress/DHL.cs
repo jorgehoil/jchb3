@@ -9,7 +9,7 @@ namespace AliExpress
     {
         public double obtenerMargenUtilidad()
         {
-            return 0.04m;
+            return 0.04;
         }
         public string obtenerNombrePaqueteria()
         {

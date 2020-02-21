@@ -14,12 +14,12 @@ namespace AliExpress
         ITransporte iTransporte;
         IPaqueteria iPaqueteria;
         IFactoryTransporte factoryTransporte;
+        IFactoryPaqueteria factoryPaqueteria;
 
        
         public void procesar()
         {
-
-            
+            string cRespuesta = string.Empty;
             iObtenedorPedidos = new ObtenedorPedidosCSV();
             List<Pedido> lstPedidos = iObtenedorPedidos.obtenerPedidos(@"C:\Users\carlos.hoil\source\repos\AliExpress\AliExpress\bin\Pedidos.csv");
 
@@ -28,29 +28,40 @@ namespace AliExpress
                 switch (pedido.cMedioTransporte)
                 {
                     case "Avion":
+                        factoryTransporte = new CreadorAvion();
+                        iTransporte = factoryTransporte.crearTransporte();
                         break;
-                    case "Barco": ///Lo Logre realizar la unión
+                    case "Barco":
+                        factoryTransporte = new CreadorBarco();
+                        iTransporte = factoryTransporte.crearTransporte();
+                        ///Lo Logre realizar la unión
                         break;
                     case "Tren":
+                        factoryTransporte = new CreadorTren();
+                        iTransporte = factoryTransporte.crearTransporte();
                         break;
 
                 }
                 switch(pedido.cPaqueteria)
                 {
                     case "DHL":
+                        factoryPaqueteria = new CreadorDHL();
+                        iPaqueteria = factoryPaqueteria.crearPaqueteria();
+                        
                         break;
                     case "Estafeta":///Lo Logre realizar la unión
+                        factoryPaqueteria = new CreadorEstafeta();
+                        iPaqueteria = factoryPaqueteria.crearPaqueteria();
                         break;
                     case "Fedex":
+                        factoryPaqueteria = new CreadorFedex();
+                        iPaqueteria = factoryPaqueteria.crearPaqueteria();
                         break;
                 }
                 iProcesadorPedidos = new ProcesadorPedidos(iTransporte,iPaqueteria);
-                iProcesadorPedidos.procesarPedido();
-                MostrarResultados();
-
-
-
-
+                Console.WriteLine(iProcesadorPedidos.procesarPedido(pedido));
+                
+                //MostrarResultados(;);
             }
 
 
